@@ -18,9 +18,9 @@
         <h5>Order your sub below</h5>
       </div>
     </div>
-    <div class="row justify-content-center mt-5">
-      <form onsubmit="app.controllers.sandwichController.order(event)">
-        <div class="form-check">
+    <div class="row justify-content-center mt-3">
+      <form onsubmit="app.controllers.sandwichController.createSandwich(event)">
+        <div class="form">
           <input type="radio" class="form-check-input" name="bread" value="white">
           <label for="bread" class="form-check-label">White</label>
           <br>
@@ -38,23 +38,26 @@
           <label for="meat" class="form-check-label">Turkey</label>
           <br>
           <input type="checkbox" class="form-check-input" name="meat" value="pastrami">
-          <label for="meat" class="form-check-label">Rye</label>
+          <label for="meat" class="form-check-label">Pastrami</label>
         </div>
         <div class="form-check mt-3">
-          <input type="checkbox" class="form-check-input" name="condiment" value="mayo">
-          <label for="condiment" class="form-check-label">Mayo</label>
+          <input type="checkbox" class="form-check-input" name="condiments" value="mayo">
+          <label for="condiments" class="form-check-label">Mayo</label>
           <br>
-          <input type="checkbox" class="form-check-input" name="condiment" value="mustard">
-          <label for="condiment" class="form-check-label">Mustard</label>
+          <input type="checkbox" class="form-check-input" name="condiments" value="mustard">
+          <label for="condiments" class="form-check-label">Mustard</label>
           <br>
-          <input type="checkbox" class="form-check-input" name="condiment" value="lettuce">
-          <label for="condiment" class="form-check-label">Lettuce</label>
+          <input type="checkbox" class="form-check-input" name="condiments" value="lettuce">
+          <label for="condiments" class="form-check-label">Lettuce</label>
           <br>
-          <input type="checkbox" class="form-check-input" name="condiment" value="tomato">
-          <label for="condiment" class="form-check-label">Tomato</label>
+          <input type="checkbox" class="form-check-input" name="condiments" value="tomato">
+          <label for="condiments" class="form-check-label">Tomato</label>
         </div>
-        <button type="submit" class="btn btn-success">Place Order</button>
+        <button type="submit" class="btn btn-success mt-4">Place Order</button>
       </form>
+    </div>
+    <div id="sandwich" class="row text-center mt-3">
+
     </div>
   </div>
 

@@ -3,7 +3,7 @@ import SandwichController from "../controllers/SandwichController.js";
 
 class App {
   constructor() {
-    this.controller = {
+    this.controllers = {
       sandwichController: new SandwichController()
     }
   }
