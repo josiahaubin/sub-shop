@@ -14,6 +14,6 @@ export default class SandwichService {
   }
 
   get Sandwiches() {
-    return _state.sandwiches
+    return _state.sandwiches.map(sandwich => new Sandwich(sandwich))
   }
 }
